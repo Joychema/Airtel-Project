@@ -1,0 +1,410 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Features</title>
+    
+    <!-- Favicons -->
+  <link href="{% static 'images/products/favicon.ico' %}" rel="icon">
+<!--  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">-->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+{#  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">#}
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Appland
+  * Template URL: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+{#<body class="index-page">#}
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="{% url 'home' %}" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">N<span>ee</span>tChamp</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'home' %}" class="active">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'features' %}">Features</a></li>
+{#          <li><a href={% url 'g' %}">Gallery</a></li>#}
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+
+<body>
+
+<section id="features" class="features section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Features</h2>
+        <p>Experience seamless connectivity with Airtel— from superfast mobile data to reliable broadband, we deliver everything you need to stay connected and ahead! </p>
+      </div><!-- End Section Title -->
+
+       <div class="container">
+          <div class="row gy-5">
+            <!-- Product Card 1 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card p-3 shadow-sm">
+                <img src="{% static 'images/products/PocketWifi.png' %}" class="card-img-top" height="380" width="120" alt="4G Pocket Wifi">
+                <div class="card-body text-center">
+                  <h5 class="card-title">4G Pocket WiFi - Key Features </h5>
+        <!--          <p class="card-text">Description of product 1.</p>--> <br>
+                  <ul class="list-unstyled">
+                    <li>🎁 Free SIM card + 5GB data included</li>
+                    <br>
+                    <li>⚡ High-speed 4G: plug & play</li>
+                    <br>
+                    <li>🌐 Portable WiFi hotspot on the go</li>
+                  </ul>
+                  <a href="#product-description" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Product Card 2 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="card p-3 shadow-sm">
+                <img src="{% static 'images/products/5gRouter.png' %}" class="card-img-top" height="380" width="120" alt=" Airtel 5G Router">
+                <div class="card-body text-center">
+                  <h5 class="card-title"> Airtel 5G Router - Key Features </h5>
+        <!--          <p class="card-text">Description of product 2.</p>--> <br>
+                  <ul class="list-unstyled">
+                     <li>👥 Connect 64 devices at once.</li>
+                    <br>
+                    <li>⚡ Lightning-fast 5G speeds</li>
+                    <br>
+                    <li> 📶 Stable, reliable connection</li>
+                  </ul>
+                  <a href="#product-description1" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Product Card 3 -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="card p-3 shadow-sm">
+                <img src="{% static 'images/products/4G_smartbox.png' %} " class="card-img-top" height="380" width="120" alt="Smart Wifi">
+                <div class="card-body text-center">
+                  <h5 class="card-title">4G Smartbox- Key Features</h5>
+        <!--          <p class="card-text">Description of product 3.</p>-->
+                  <br>
+                  <ul class="list-unstyled">
+                    <li>🎁 Free SIM card + 10GB data included</li>
+                    <br>
+                    <li>⚡ High-speed 4G: Instant connectivity</li>
+                    <br>
+                    <li>🌐 Portable WiFi hotspot</li>
+                  </ul>
+                  <a href="#product-description2" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+     
+
+  </section>
+
+  <!-- Feature Details Section -->
+    <section id="feature-details" class="feature-details section">
+
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item" id="product-description">
+          <div class="col-md-5 order-2 order-md-1 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <img src="{% static 'images/products/pocketwifi4.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-1 order-md-2" data-aos="fade-up" data-aos-delay="100">
+            <h3>4G Pocket WiFi 🌍⚡</h3>
+            <p>Stay connected on the go with our ultraportable 4G Pocket Wi-Fi! Enjoy high-speed internet anytime,
+              anywhere, with support for up to 10 devices. It’s perfect for streaming, browsing, and sharing. Plus,
+              it comes with a free SIM card and 5GB of data—plug, play, and connect instantly! 🎁📶</p>
+            <h6><strong>Key Features :</strong></h6>
+<!--            <p class="fst-italic">-->
+<!--              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore-->
+<!--              magna aliqua.-->
+<!--            </p>-->
+            <ul>
+              <li><i class="bi bi-check"></i><span> 👥 Connect up to 10 devices at once</span></li>
+              <li><i class="bi bi-check"></i> <span>🔋 Rechargeable battery for use anywhere</span></li>
+              <li><i class="bi bi-check"></i> <span>🔘 One-touch WPS button for easy setup</span></li>
+              <li><i class="bi bi-check"></i> <span>💻 Compatible with Windows, macOS, and Android</span></li>
+              <li><i class="bi bi-check"></i> <span>📺 Supports laptops, Smart TVs, desktops, & more</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" id="product-description2">
+          <div class="col-md-5 order-2 order-md-1 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="{% static 'images/products/4G_smartbox-removebg-preview.png' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 order-1 order-md-2" data-aos="fade-up" data-aos-delay="200">
+            <h3>4G Smart WiFi 📡🚀</h3>
+            <p>Experience seamless connectivity with the 4G Smart Wi-Fi! Perfect for home or office,
+              it supports up to 32 devices with superfast 4G speeds. Enjoy hassle-free streaming, gaming, and browsing,
+              all powered by a rechargeable battery. Plus,
+              it comes with a free SIM card and 10GB of data—just plug and play! 🏠🌐</p>
+            <h6><strong>Key Features :</strong></h6>
+            <ul>
+              <li><i class="bi bi-check"></i> <span>👥 Connect up to 32 devices at once</span></li>
+              <li><i class="bi bi-check"></i><span> 💻 Compatible with Windows, macOS, and Android</span></li>
+              <li><i class="bi bi-check"></i> <span>🔋 Rechargeable battery: Perfect for on-the-go use</span>.</li>
+              <li><i class="bi bi-check"></i> <span>🔘 One-touch WPS button for easy connections</span>.</li>
+              <li><i class="bi bi-check"></i> <span>📺 Streams to laptops, Smart TVs, desktops, & more</span>.</li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 align-items-center features-item" id="product-description1">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="300">
+            <img src="{% static 'images/products/bg-5g_router.png' %}" class="img-fluid" height="500" width="375" alt="">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="300">
+            <h3>Airtel 5G Router ⚡📶</h3>
+<!--            <p class="fst-italic">-->
+<!--              Live the Future with Airtel 5G Router 🚀-->
+<!--            </p>-->
+            <p>
+              Meet the Airtel 5G Router, a compact powerhouse designed to deliver blazing-fast broadband speeds.
+              With 5G capabilities, plus 3G and 4G LTE compatibility,
+              it ensures seamless connectivity for all your devices, wherever you are.
+            </p>
+            <h6><strong>Key Features :</strong></h6>
+
+            <ul>
+              <li><i class="bi bi-check"></i><span> ⚡ Lightning-fast 5G speeds – Experience the future of connectivity.</span></li>
+              <li><i class="bi bi-check"></i> <span>📱 Connect up to 64 devices – Perfect for households or small offices.</span></li>
+              <li><i class="bi bi-check"></i> <span>📶 Dual-band Wi-Fi – Enjoy stable and fast connections on both 2.4 GHz and 5 GHz bands.</span></li>
+              <li><i class="bi bi-check"></i> <span>🔒 Enhanced security – Keep your network safe with top-tier encryption.</span></li>
+              <li><i class="bi bi-check"></i> <span>🌐 Plug-and-play – Simple setup and instant connectivity.</span></li>
+            </ul>
+          </div>
+        </div><!-- Features Item -->
+
+        <section class="christmas-offer">
+          <div class="container text-center">
+            <h3 class="offer-title">🎄 Christmas Special Offer 🎄</h3>
+        
+        <!--     Flexbox container for side-by-side layout -->
+            <div class="offer-content d-flex flex-column-reverse flex-md-row align-items-center justify-content-center">
+        <!--       Product Image-->
+        <!--      <div class="product-image mb-4 mb-md-0">-->
+        <!--        <img src="assets/img/products/bg-5g_router.png" height="570" width="375" alt="Airtel 5G Router" class="img-fluid rounded shadow-lg" />-->
+        <!--      </div>-->
+        
+              <!-- Offer Details -->
+              <div class="offer-details text-left">
+                <p class="offer-description">
+                  🎅 **Merry Christmas Discount**: Get the **<strong class="offer-ck">Airtel 5G Router</strong>** for only <strong class="offer-ck">Ksh. 3500</strong>, down from <strong class="offer-ck">Ksh. 6500</strong>!
+                </p>
+                <p class="offer-description">
+                  🎁 **Christmas Bundle**: Enjoy <strong class="offer-ck">FREE 5GB of data</strong> for the first month, plus <strong class="offer-ck">10% off</strong> on your next recharge and a bonus <strong class="offer-ck">FREE 2GB of data</strong> for the holidays!
+                </p>
+{#                <p class="offer-cta">#}
+{#                  ⏳ <strong>Offer valid until [Date]! Limited stock available – don’t miss out!</strong>#}
+{#                </p>#}
+                <a href="#purchase-section" class="btn btn-danger">Grab the Christmas Offer Now</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+<!--        <div class="row gy-4 align-items-center features-item">-->
+<!--          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">-->
+<!--            <img src="assets/img/features-4.png" class="img-fluid" alt="">-->
+<!--          </div>-->
+
+         <!-- Bootstrap container to center content -->
+        <div class="container my-5">
+          <div class="row align-items-center">
+            <!-- First Poster -->
+            <div class="col-md-6 mb-4">
+              <div class="poster-card">
+                <img src="{% static 'images/products/prepaid.jpeg' %}" class="img-fluid rounded shadow" alt="Airtel Pocket WiFi Offer">
+                <h3 class="mt-3">Airtel Prepaid Plans 💳⚡</h3>
+                <p>Get the freedom to pay as you go! Enjoy flexible, budget-friendly plans with unbeatable data, talk time, and SMS bundles.
+                  Top up anytime, anywhere—no contracts, no commitments. Perfect for those who value control and convenience! 🌍📲</p>
+                <a href="#products" class="btn btn-danger">Learn More</a>
+              </div>
+            </div>
+
+            <!-- Second Poster -->
+            <div class="col-md-6 mb-4">
+              <div class="poster-card">
+                <img src="{% static 'images/products/postpaid.jpeg' %}" class="img-fluid rounded shadow" alt="Airtel 5G Router Offer">
+                <h3 class="mt-3">Airtel Postpaid Plans 📋📶</h3>
+                <p>Level up with Airtel Postpaid! Experience unlimited data, premium benefits, and seamless connectivity with plans designed for your lifestyle.
+                  Get billed at the end of the month and enjoy uninterrupted service—ideal for power users and professionals! 💼🚀</p>
+                <a href="#shop" class="btn btn-danger">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- /Feature Details Section -->
+
+<div class="container my-5">
+  <!-- Meet Our Team Section -->
+      <section id="gallery">
+  <section id="team">
+    <h2 class="text-center mb-4">Meet Our Team 👩‍💼👨‍💻</h2>
+    <div class="row justify-content-center gy-5">
+      <!-- Team Member 1 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="{% static 'images/products/team-member1.jpeg' %}" class="card-img-top" alt="Team Member 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">John Doe</h5>
+            <p class="card-text">Sales Manager</p>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="{% static 'images/products/team-member2.jpeg' %}" class="card-img-top" alt="Team Member 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Jane Smith</h5>
+            <p class="card-text">Technical Support</p>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="{% static 'images/products/team-member3.jpeg' %}" class="card-img-top" alt="Team Member 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Alex Brown</h5>
+            <p class="card-text">Marketing Specialist</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <hr class="my-5">
+
+  <!-- Happy Customers Section -->
+      <section id="customers">
+        <h2 class="text-center mb-4">Happy Customers 😊</h2>
+        <div class="row justify-content-center gy-5">
+          <!-- Customer 1 -->
+          <div class="col-md-4">
+            <div class="card shadow">
+              <img src="{% static 'images/products/Customer1.jpeg' %}" class="card-img-top" alt="Happy Customer 1">
+              <div class="card-body text-center">
+                <p class="card-text">"Airtel's service is incredible! I've never been happier with my connection." - Sarah Lee</p>
+              </div>
+            </div>
+          </div>
+          <!-- Customer 2 -->
+          <div class="col-md-4">
+            <div class="card shadow">
+              <img src="{% static 'images/products/Customer2.jpeg' %}" class="card-img-top" alt="Happy Customer 2">
+              <div class="card-body text-center">
+                <p class="card-text">"Reliable and fast internet everywhere I go!" - Michael Jordan</p>
+              </div>
+            </div>
+          </div>
+          <!-- Customer 3 -->
+          <div class="col-md-4">
+            <div class="card shadow">
+              <img src="{% static 'images/products/Customer3.jpeg' %}" class="card-img-top" alt="Happy Customer 3">
+              <div class="card-body text-center">
+                <p class="card-text">"Airtel is the best choice for my family’s needs." - Priya Patel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </section>
+    </div>
+
+  <footer id="footer" class="footer">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">N<span>ee</span>tChamp</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Features</a></li>
+<!--            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>-->
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">NeetChamp</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+<!--        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
+      </div>
+    </div>
+  </footer>
+    
+</body>
+</html>
