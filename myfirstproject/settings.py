@@ -10,7 +10,20 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 import os
+# import sys
 from pathlib import Path
+
+# Add your project directory to the sys.path
+# project_home = '\OneDrive\Desktop\MYPROJECT'
+# if project_home not in sys.path:
+#     sys.path.append(project_home)
+
+# Set the DJANGO_SETTINGS_MODULE environment variable
+# os.environ['DJANGO_SETTINGS_MODULE'] = 'myfirstproject.settings'
+
+# Import Django and start the WSGI application
+# from django.core.wsgi import get_wsgi_application
+# application = get_wsgi_application()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
