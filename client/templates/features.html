@@ -20,7 +20,7 @@
   <!-- Vendor CSS Files -->
   <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
-  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+{#  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">#}
 {#  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">#}
   <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
     
@@ -51,9 +51,9 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="{% url 'home' %}" class="active">Home</a></li>
+          <li><a href="{% url 'home' %}" >Home</a></li>
           <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="{% url 'features' %}">Features</a></li>
+          <li><a href="{% url 'features' %}" class="active">Features</a></li>
 {#          <li><a href={% url 'g' %}">Gallery</a></li>#}
           <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
@@ -89,7 +89,7 @@
                     <br>
                     <li>🌐 Portable WiFi hotspot on the go</li>
                   </ul>
-                  <a href="#product-description" class="btn btn-primary">Learn More</a>
+                  <a href="#product-description" class="btn btn-danger">Learn More</a>
                 </div>
               </div>
             </div>
@@ -108,7 +108,7 @@
                     <br>
                     <li> 📶 Stable, reliable connection</li>
                   </ul>
-                  <a href="#product-description1" class="btn btn-primary">Learn More</a>
+                  <a href="#product-description1" class="btn btn-danger">Learn More</a>
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@
                     <br>
                     <li>🌐 Portable WiFi hotspot</li>
                   </ul>
-                  <a href="#product-description2" class="btn btn-primary">Learn More</a>
+                  <a href="#product-description2" class="btn btn-danger">Learn More</a>
                 </div>
               </div>
             </div>
@@ -149,7 +149,7 @@
           </div>
           <div class="col-md-7 order-1 order-md-2" data-aos="fade-up" data-aos-delay="100">
             <h3>4G Pocket WiFi 🌍⚡</h3>
-            <p>Stay connected on the go with our ultraportable 4G Pocket Wi-Fi! Enjoy high-speed internet anytime,
+            <p>Stay connected on the go with our ultra portable 4G Pocket Wi-Fi! Enjoy high-speed internet anytime,
               anywhere, with support for up to 10 devices. It’s perfect for streaming, browsing, and sharing. Plus,
               it comes with a free SIM card and 5GB of data—plug, play, and connect instantly! 🎁📶</p>
             <h6><strong>Key Features :</strong></h6>
@@ -189,10 +189,10 @@
         </div><!-- Features Item -->
 
         <div class="row gy-4 align-items-center features-item" id="product-description1">
-          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="300">
+          <div class="col-md-5 order-2 order-md-1 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="300">
             <img src="{% static 'images/products/bg-5g_router.png' %}" class="img-fluid" height="500" width="375" alt="">
           </div>
-          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-md-7 order-1 order-md-2" data-aos="fade-up" data-aos-delay="300">
             <h3>Airtel 5G Router ⚡📶</h3>
 <!--            <p class="fst-italic">-->
 <!--              Live the Future with Airtel 5G Router 🚀-->
@@ -356,55 +356,60 @@
       </section>
     </div>
 
-  <footer id="footer" class="footer">
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="d-flex align-items-center">
-            <span class="sitename">N<span>ee</span>tChamp</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-        </div>
+  <footer id="footer" class="footer bg-dark-subtle text-light pt-5">
+    <div class="container">
+        <div class="row gy-4">
+            <!-- Company Section -->
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-uppercase text-dark-emphasis">About Airtel</h4>
+                <p>Connecting Lives, Empowering Dreams. Airtel brings you seamless communication with cutting-edge technology and customer-centric service.</p>
+{#                <p><i class="bi bi-geo-alt"></i> A108 Adam Street, New York, NY 535022</p>#}
+                <p><i class="bi bi-envelope"></i> johnmaneene@gmail.com</p>
+                <p><i class="bi bi-telephone"></i> +254 782 773 671</p>
+                <p><i class="bi bi-telephone"></i> +254 703 169 988</p>
+            </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Features</a></li>
-<!--            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>-->
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-12">
-          <h4>Follow Us</h4>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-          <div class="social-links d-flex">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
+            <!-- Useful Links -->
+            <div class="col-lg-2 col-md-3">
+                <h4 class="text-uppercase text-dark-emphasis">Useful Links</h4>
+                <ul class="list-unstyled">
+                    <li><i class="bi bi-chevron-right"></i> <a href="{% url 'home' %}" class="text-dark">Home</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="{% url 'about' %}" class="text-dark">About Us</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="{% url 'features' %}" class="text-dark">Features</a></li>
+                    <li><i class="bi bi-chevron-right"></i> <a href="{% url 'contact' %}" class="text-dark">Contact</a></li>
+                </ul>
+            </div>
 
-      </div>
+            <!-- Social Media Links -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-uppercase text-dark-emphasis">Follow Us</h4>
+                <p>Stay connected with us through our social media channels.</p>
+                <div class="d-flex">
+                    <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-sm me-2"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Newsletter Subscription -->
+{#            <div class="col-lg-3 col-md-6">#}
+{#                <h4 class="text-uppercase text-white">Subscribe</h4>#}
+{#                <p>Sign up for our newsletter to stay updated with the latest offers and news.</p>#}
+{#                <form action="#" method="post">#}
+{#                    <div class="input-group">#}
+{#                        <input type="email" class="form-control" placeholder="Enter your email" required>#}
+{#                        <button class="btn btn-danger" type="submit"><i class="bi bi-send"></i></button>#}
+{#                    </div>#}
+{#                </form>#}
+{#            </div>#}
+        </div>
     </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">NeetChamp</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-<!--        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
-      </div>
+    <div class="footer-bottom text-center mt-4 py-3 bg-secondary">
+        <p class="mb-0">&copy; 2024 Airtel. All Rights Reserved.</p>
     </div>
-  </footer>
+</footer>
     
 </body>
 </html>
