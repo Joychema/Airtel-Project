@@ -464,27 +464,27 @@
   
 {#Contact Info#}
 
-  <div class="container mt-5">
-        <h1>Contact Us</h1>
-        <div class="contact-form">
-            {% if messages %}
-                <div class="alert alert-success" role="alert">
-                    {% for message in messages %}
-                        {{ message }}
-                    {% endfor %}
-                </div>
-            {% endif %}
-            <form method="POST">
-                {% csrf_token %}
-                <!-- Crispy takes care of rendering the entire form -->
-                {{ form|crispy }}
-
-                <!-- Submit Button -->
-                <button type="submit" class="btn btn-airtel w-100 mt-3">Send Message</button>
-            </form>
-
-        </div>
-  </div>
+{#  <div class="container mt-5">#}
+{#        <h1>Contact Us</h1>#}
+{#        <div class="contact-form">#}
+{#            {% if messages %}#}
+{#                <div class="alert alert-success" role="alert">#}
+{#                    {% for message in messages %}#}
+{#                        {{ message }}#}
+{#                    {% endfor %}#}
+{#                </div>#}
+{#            {% endif %}#}
+{#            <form method="POST">#}
+{#                {% csrf_token %}#}
+{#                <!-- Crispy takes care of rendering the entire form -->#}
+{#                {{ form|crispy }}#}
+{##}
+{#                <!-- Submit Button -->#}
+{#                <button type="submit" class="btn btn-airtel w-100 mt-3">Send Message</button>#}
+{#            </form>#}
+{##}
+{#        </div>#}
+{#  </div>#}
   
   </main>
 

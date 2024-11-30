@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
-from client.forms import ContactForm
+from .forms import ContactForm
 from django.contrib import messages
 
 # Create your views here.
