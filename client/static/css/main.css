@@ -232,7 +232,7 @@ h6 {
   transform: translateY(-10px);
 }
 .card img {
-  height: 300px;
+  height: 250px;
   object-fit: cover;
 }
 .card-body {
@@ -313,6 +313,23 @@ h2 {
 .about-card i {
     color: #e1261c; /* Airtel red for icons */
     margin-right: 8px;
+}
+
+/*hero image*/
+.no-border {
+  border: none; /* Removes any border */
+  outline: none; /* Removes any outline */
+  display: block; /* Ensures no inline spacing issues */
+  width: 100%; /* Makes it responsive */
+  max-width: 100%; /* Ensures it does not exceed its container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 0; /* Ensures no rounded corners */
+}
+.hero {
+  margin: 0; /* Removes margin */
+  padding: 0; /* Removes padding */
+  text-align: center; /* Centers the content */
+  background-color: #f5f5f5; /* Optional: Add a background color */
 }
 
 
